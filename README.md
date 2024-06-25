@@ -31,8 +31,8 @@ PasswordManager is a secure password management web application built using Pyth
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/PasswordManager.git
-    cd PasswordManager
+    git clone https://github.com/sumanhosad/Passwordsmanager.git
+    cd Passwordsmanager
     ```
 
 2. **Run the application:**
