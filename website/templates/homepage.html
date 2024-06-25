@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+   
+</head>
+<body>
+   
+<div id="container">
+    <div class="heading">
+        <h1 class="caption"><span class="tweak">P</span>assword <span class="tweak">M</span>anager</h1>
+    </div>
+    <div class="controls">
+        <a href="{{ url_for('addpassword') }}" class="btn-custom">Add Password</a>
+        <a href="{{ url_for('accesspassword') }}" class="btn-custom">Access Password</a>
+        <a href="{{ url_for('managepassword') }}" class="btn-custom">Manage Password</a>
+    </div>
+    <p><a style="color:#C1C1C1" href="{{ url_for('login') }}">Log out</a></p>
+</div>
+
+<div id="particles-js"></div>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="{{ url_for('static', filename='javascript/particle.js') }}"></script>
+</body>
+</html>
+

@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signin Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+
+<div id="container">
+    <div class="heading">
+        <h1 class="caption"><span class="tweak">S</span>ignin</h1>
+    </div>
+    <div>
+        <br>
+          {% if message %}
+        <div class="alert alert-danger" role="alert">
+            {{ message }}
+        </div>
+        {% endif %}
+        <form action="{{url_for('signin')}}" method="post" class="controls">
+            <input type="text" name="username" placeholder="Choose a Username" class="form-control" required>
+            <input type="password" name="password" placeholder="Choose a Master Password" class="form-control" required>
+            <button type="submit" class="btn-custom">Signin</button>
+            <p class="prg">Already have an account? <a href="{{url_for('login')}}">Log in</a></p>
+        </form>
+    </div>
+</div>
+
+<div id="particles-js"></div>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="{{url_for('static',filename='javascript/particle.js')}}"></script>
+
+</body>
+</html>
+
